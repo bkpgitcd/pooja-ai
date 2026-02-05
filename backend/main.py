@@ -159,11 +159,12 @@ def call_google_tts(text, language):
     # Using Journey/Studio voices for more natural young female sound
     # Wavenet-D voices are female with brighter tone
     # Pitch raised to +3.0 for younger sound
+
     voice_map = {
-        'en-US': {'languageCode': 'en-IN', 'name': 'en-IN-Wavenet-D', 'ssmlGender': 'FEMALE'},
-        'hi-IN': {'languageCode': 'hi-IN', 'name': 'hi-IN-Wavenet-D', 'ssmlGender': 'FEMALE'},
-        'ta-IN': {'languageCode': 'ta-IN', 'name': 'ta-IN-Wavenet-D', 'ssmlGender': 'FEMALE'},
-        'raj-IN': {'languageCode': 'hi-IN', 'name': 'hi-IN-Wavenet-D', 'ssmlGender': 'FEMALE'},
+        'en-US': {'languageCode': 'en-IN', 'name': 'en-IN-Wavenet-A', 'ssmlGender': 'FEMALE'},
+        'hi-IN': {'languageCode': 'hi-IN', 'name': 'hi-IN-Wavenet-A', 'ssmlGender': 'FEMALE'},
+        'ta-IN': {'languageCode': 'ta-IN', 'name': 'ta-IN-Wavenet-A', 'ssmlGender': 'FEMALE'},
+        'raj-IN': {'languageCode': 'hi-IN', 'name': 'hi-IN-Wavenet-A', 'ssmlGender': 'FEMALE'},
     }
     
     voice_config = voice_map.get(language, voice_map['en-US'])
